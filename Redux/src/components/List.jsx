@@ -13,11 +13,15 @@ const List = (props) => {
     label: '事情3',
     status: 1
   }]
-  return <div style={listStyle}> {list.map(v => <div key={v.id} className="list-li">{v.label}</div>)}</div>
+  return <div style={listStyle}> {list.map(v => <div key={v.id} className="list-li" style={style}>{v.label}</div>)}</div>
 }
 
 export default List
 
 const style = {
-  
+  width: '400px',
+  height: '40px',
+  lineHeight: '40px',
+  textIndent: '30px',
+  borderBottom: '1px dashed #ddd'
 }
