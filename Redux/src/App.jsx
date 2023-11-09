@@ -1,17 +1,24 @@
-import Tab from './components/tab.jsx'
+import Tab from './components/Tab.jsx';
+import List from './components/List.jsx';
 
 function App() {
+  const { tabStyle, listStyle } = style
   return (
     <>
       <Tab style={ tabStyle} />
-      <div onClick={() => alert(1)}>点击测试</div>
+      <List style={ listStyle}/>
     </>
   )
 }
 
 export default App
 
-const tabStyle = {
-  display: 'flex',
-  width: 400
+const style = {
+  tabStyle: {
+    display: 'flex',
+    width: 400
+  },
+  listStyle: {
+
+  }
 }
