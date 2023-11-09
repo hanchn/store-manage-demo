@@ -12,7 +12,6 @@ function App() {
 export default App
 
 const tabStyle = {
-  width: '100%',
   display: 'flex',
   width: 400
 }

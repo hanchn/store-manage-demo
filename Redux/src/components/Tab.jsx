@@ -7,7 +7,10 @@ function Tab(props) {
 export default Tab
 
 const style = {
-  width: "300px",
+  width: 300,
+  height: 40,
+  lineHeight: '40px',
   textAlign: 'center',
   background: '#cccccc',
+  cursor: 'pointer'
 }
