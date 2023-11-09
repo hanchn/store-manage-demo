@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Tab style={ tabStyle} />
-      <List style={ listStyle}/>
+      <List style={listStyle} getStatusStr={() => { }} />
     </>
   )
 }

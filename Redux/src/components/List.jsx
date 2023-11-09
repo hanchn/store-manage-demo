@@ -1,5 +1,5 @@
 const List = (props) => {
-  const { style: listStyle } = props
+  const { style: listStyle, getStatusStr } = props
   const list = [{
     id: 1,
     label: '事情1',
@@ -13,7 +13,7 @@ const List = (props) => {
     label: '事情3',
     status: 1
   }]
-  return <div style={listStyle}> {list.map(v => <div key={v.id} className="list-li" style={style}>{v.label}</div>)}</div>
+  return <div style={listStyle}> {list.map(v => <div key={v.id} className="list-li" style={style}>{v.label}<button>{getStatusStr(v.status)}</button></div>)}</div>
 }
 
 export default List
